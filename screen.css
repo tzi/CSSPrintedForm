@@ -1,0 +1,35 @@
+.format-A5.format-portrait .poster {
+    width: 148mm;
+    height: 210mm;
+}
+.format-A5.format-landscape .poster {
+    width: 210mm;
+    height: 148mm;
+}
+
+.format-A4.format-portrait .poster {
+    width: 210mm;
+    height: 297mm;
+}
+.format-A4.format-landscape .poster {
+    width: 297mm;
+    height: 210mm;
+}
+
+.format-A3.format-portrait .poster {
+    width: 297mm;
+    height: 420mm;
+}
+.format-A3.format-landscape .poster {
+    width: 420mm;
+    height: 297mm;
+}
+
+.format-A2.format-portrait .poster {
+    width: 420mm;
+    height: 594mm;
+}
+.format-A2.format-landscape .poster {
+    width: 594mm;
+    height: 420mm;
+}
