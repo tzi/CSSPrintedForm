@@ -57,6 +57,9 @@ body {
 }
 
 @media (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
     .header {
         display: flex;
     }
@@ -64,10 +67,7 @@ body {
         margin: 0;
         text-align: left;
     }
-    .header__title > h2 {
-        display: block;
-    }
-    .header__title > h2:nth-of-type(2)::before {
+    .header__contact {
         display: none;
     }
 }
@@ -98,32 +98,54 @@ form > * {
 .formGroup {
     padding-top: 1em;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 @media (orientation: portrait) {
     form {
-        display: block;
+        flex-direction: column;
     }
     .formIdentity {
         border-width: 0;
+    }
+    .formInscription {
+        padding-right: 1em;
+        padding-left: 0;
+    }
+    form > * {
+        flex-grow: 1;
+        flex-basis: auto;
     }
 }
 
 
 /* GENERAL FORM
  **************************************/
-.formLine {
-    padding: 12px 0 1.2em 0;
-    overflow: hidden;
+h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
 }
 .formItem {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     position: relative;
     width: 46%;
     margin-left: 4%;
+    padding: 12px 0 1.2em 0;
 }
 .formItem--double {
     width: 96%;
+}
+label {
+    position: absolute;
+    bottom: 0;
+    color: darkslategray;
+}
+label > i {
+    font-size: x-small;
+    font-style: normal;
 }
 input[type=text] {
     -moz-box-sizing: border-box;
@@ -141,30 +163,25 @@ input.inText {
     border-style: dotted;
     border-width: 0 0 1px;
 }
+input.inText--half {
+    width: 150px;
+}
 .interInput {
     width: 5%;
     display: inline-block;
     text-align: center;
     margin: 0 -0.32em;
 }
-label {
-    position: absolute;
-    top: 100%;
-    color: darkslategray;
-}
-label > i {
-    font-size: x-small;
-    font-style: normal;
-}
-h3 {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
 p {
-    margin: 0.5em 4% 0 0;
+    margin: 0.5em 0 0 4%;
     text-align: justify;
     line-height: 1.4;
+}
+
+@media (orientation: portrait) {
+    .formItem {
+        padding-top: 6px;
+    }
 }
 
 
@@ -180,22 +197,35 @@ input.year {
 }
 
 
-/* ACTIVITY
+/* INSCRIPTION
  **************************************/
+.attachment,
 .activity {
     border-collapse: collapse;
     width: 100%;
 }
+.attachment tr td,
 .activity tr td {
-    padding-top: 12px
+    padding-top: 6px
 }
-.activity tr td:nth-child(2) {
+.attachment tr td:nth-child(2),
+.activity tr td:nth-child(2),
+.activity tr td:nth-child(3) {
     text-align: center;
 }
 .activity .total td {
     font-weight: bold;
+    text-align: right;
 }
+.attachment .toComplete,
 .activity .toComplete {
     border-bottom: 1px darkgray dotted;
     min-width: 75px;
+}
+
+@media (orientation: portrait) {
+    .attachment tr td,
+    .activity tr td {
+        padding-top: 0
+    }
 }
