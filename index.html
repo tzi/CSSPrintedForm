@@ -8,7 +8,6 @@
     <link href='http://fonts.googleapis.com/css?family=Ruslan+Display' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="header__photo"></div>
     <div class="header">
         <div class="header__title">
             <h1>No Kachi Lyon</h1>
@@ -23,7 +22,10 @@
     <form>
         <div class="formIdentity">
             <div class="formGroup">
-                <h3>L'adhérent</h3>
+                <h3>Fiche adhérent</h3>
+                <div class="formItem formItem--photo">
+                    <div class="photo"></div>
+                </div>
                 <div class="formItem">
                     <label>Prénom</label>
                     <input type="text" />
@@ -32,7 +34,7 @@
                     <label>Nom</label>
                     <input type="text" />
                 </div>
-                <div class="formItem">
+                <div class="formItem formItem--birth">
                     <label>Date de naissance</label>
                     <input type="text" class="day" />
                         <span class="interInput">/</span>
@@ -47,7 +49,7 @@
             </div>
 
             <div class="formGroup">
-                <h3>Le responsable</h3>
+                <h3>Fiche de contact</h3>
                 <div class="formItem">
                     <label>Prénom <i>(si différent de l'adhérent)</i></label>
                     <input type="text" />
@@ -96,8 +98,8 @@
         </div>
         <div class="formInscription">
             <div class="formGroup">
-                <h3>L'activité</h3>
-                <div class="formItem formItem--double">
+                <h3>Activités</h3>
+                <div class="tableWrapper">
                     <table class="activity">
                         <tr>
                             <td>Cotisation Karaté de 6 à 9ans</td>
@@ -136,7 +138,7 @@
             <div class="formGroup">
                 <h3>Pièces jointes</h3>
                 <div class="formLine">
-                    <div class="formItem formItem--double">
+                    <div class="tableWrapper">
                         <table class="attachment">
                             <tr>
                                 <td>Certificat médical daté de moins d’un an</td>
