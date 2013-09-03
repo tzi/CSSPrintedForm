@@ -20,13 +20,15 @@ body {
 /* HEADER
  **************************************/
 .header {
-    border-bottom: 1px black solid;
+    border-bottom: 1px solid DimGrey;
+    position: relative;
 }
 .header_photo {
     float: left;
 }
 .header__contact {
-    float: right;
+    position: absolute;
+    right: 0; bottom: 0;
     text-align: right;
     line-height: 2em;
 }
@@ -42,17 +44,60 @@ body {
     font-family: 'Ruslan Display',cursive;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: -0.25em;
 }
 .header__title > h2 {
-    margin-top: -0.4em;
+    text-transform: uppercase;
+    display: inline;
+}
+.header__title > h2:nth-of-type(2)::before {
+    content: ' - ';
+    display: inline;
 }
 
-/* GENERAL FORM
+@media (orientation: portrait) {
+    .header {
+        display: flex;
+    }
+    .header__title {
+        margin: 0;
+        text-align: left;
+    }
+    .header__title > h2 {
+        display: block;
+    }
+    .header__title > h2:nth-of-type(2)::before {
+        display: none;
+    }
+}
+
+
+/* LAYOUT FORM
  **************************************/
 form {
     flex: 1;
+    display: flex;
     flex-direction: row;
 }
+.formIdentity {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    border-right: 1px solid DimGrey;
+}
+
+@media (orientation: portrait) {
+    form {
+        display: block;
+    }
+    .formIdentity {
+        border-width: 0;
+    }
+}
+
+
+/* GENERAL FORM
+ **************************************/
 .formGroup {
     padding-top: 1em;
 }
@@ -75,7 +120,7 @@ form {
 input[type=text] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px darkgray solid;
+    border: 1px solid darkgray;
     border-width: 0 1px 1px;
     width: 100%;
     height: 0.5em;
@@ -94,23 +139,16 @@ label {
 }
 label > i {
     font-size: x-small;
+    font-style: normal;
 }
 h3 {
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 /* IDENTITY
  **************************************/
-.formIdentity {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    border-right: 1px black solid;
-}
-.formIdentity__member {
-
-}
 input.day,
 input.month {
     width: 25%;
