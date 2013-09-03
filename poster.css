@@ -3,7 +3,7 @@
     margin: 0;
 }
 html {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
 }
 body {
@@ -31,6 +31,7 @@ body {
     right: 0; bottom: 0;
     text-align: right;
     line-height: 2em;
+    color: darkslategray;
 }
 .header__title {
     text-align: center;
@@ -78,6 +79,7 @@ form {
     flex: 1;
     display: flex;
     flex-direction: row;
+    background: url(background.png) center center no-repeat;
 }
 .formIdentity {
     -moz-box-sizing: border-box;
@@ -98,14 +100,16 @@ form {
 
 /* GENERAL FORM
  **************************************/
+form > * {
+    display: flex;
+    flex-direction: column;
+}
 .formGroup {
     padding-top: 1em;
-}
-.formGroup + .formGroup {
-    margin-top: 2em;
+    flex-grow: 1;
 }
 .formLine {
-    padding: 1.2em 0;
+    padding: 12px 0 1.2em 0;
     overflow: hidden;
 }
 .formItem {
@@ -117,15 +121,24 @@ form {
 .formItem + .formItem{
     margin-right: 4%;
 }
+.formItem--double {
+    width: 92%;
+}
 input[type=text] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background: transparent;
     border: 1px solid darkgray;
     border-width: 0 1px 1px;
     width: 100%;
     height: 0.5em;
     margin-top: 0.5em;
     vertical-align: bottom;
+}
+input.inText {
+    width: 300px;
+    border-style: dotted;
+    border-width: 0 0 1px;
 }
 .interInput {
     width: 5%;
@@ -136,6 +149,7 @@ input[type=text] {
 label {
     position: absolute;
     top: 100%;
+    color: darkslategray;
 }
 label > i {
     font-size: x-small;
@@ -145,6 +159,11 @@ h3 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+}
+p {
+    margin: 0.5em 4% 0;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 /* IDENTITY
