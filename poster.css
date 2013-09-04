@@ -168,7 +168,7 @@ input.inText--half {
     width: 5%;
     display: inline-block;
     text-align: center;
-    margin: 0 -0.32em;
+    margin: 0 -0.35em;
 }
 p {
     margin: 0.5em 0 0 4%;
@@ -190,18 +190,12 @@ p {
 
 /* IDENTITY
  **************************************/
-.formItem--photo {
-    float: right;
-}
 .photo {
-    margin: 0 auto;
-    border: 1px darkgray solid;
-    background: white;
-    width: 35mm;
+    background: url("logo.png") no-repeat scroll center center / cover  white;
+    border: 1px solid darkgray;
     height: 45mm;
-}
-.formItem--birth {
-    clear: left;
+    margin: 0 auto;
+    width: 35mm;
 }
 
 @media (orientation: portrait) {
@@ -210,6 +204,12 @@ p {
         width: auto;
         right: 60px;
         top: 40px;
+    }
+    .photo {
+        border-color: DimGrey;
+    }
+    .formItem--birth {
+        clear: left;
     }
     .formBloc--address {
         float: left;
@@ -237,11 +237,15 @@ input.year {
 }
 .attachment tr td,
 .activity tr td {
-    padding-top: 6px
+    padding-top: 6px;
+    height: 20px;
 }
-.attachment tr td:nth-child(2),
-.activity tr td:nth-child(2),
-.activity tr td:nth-child(3) {
+.attachment tr td:nth-child(1),
+.activity tr td:nth-child(1),
+.activity tr td:nth-child(3),
+.activity tr td:nth-child(4),
+.activity tr td:nth-child(5),
+.activity tr td:nth-child(6) {
     text-align: center;
 }
 .activity .total td {
