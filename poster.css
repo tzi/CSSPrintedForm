@@ -61,9 +61,6 @@ body {
         margin: 0;
         text-align: left;
     }
-    .header__contact {
-        display: none;
-    }
 }
 
 
@@ -92,7 +89,6 @@ form > * {
 .formGroup {
     padding-top: 1em;
     flex-grow: 1;
-    overflow: hidden;
 }
 
 @media (orientation: portrait) {
@@ -135,6 +131,18 @@ h3 {
 }
 .formItem--double {
     width: 96%;
+}
+.formItem--half {
+    width: 21%;
+}
+.formItem--3quarters {
+    width: 71%;
+}
+.formItem--small {
+    width: 29%;
+}
+.formItem--large {
+    width: 63%;
 }
 label {
     position: absolute;
@@ -185,28 +193,41 @@ p {
     .formItem--double {
         width: 63%;
     }
+    .formItem--half {
+        width: 13.5%;
+    }
+    .formItem--small {
+        width: 19%;
+    }
+    .formItem--large {
+        width: 41%;
+    }
 }
 
 
 /* IDENTITY
  **************************************/
+.formItem--photo {
+    width: auto;
+}
 .photo {
-    background: url("logo.png") no-repeat scroll center center / cover  white;
+    background: white;
     border: 1px solid darkgray;
     height: 45mm;
     margin: 0 auto;
     width: 35mm;
 }
+.formBlock {
+    overflow: hidden;
+}
 
 @media (orientation: portrait) {
     .formItem--photo {
-        position: absolute;
-        width: auto;
-        right: 60px;
-        top: 40px;
+        float: right;
+        top: -20px;
     }
     .photo {
-        border-color: DimGrey;
+        margin-bottom: -70px;
     }
     .formItem--birth {
         clear: left;

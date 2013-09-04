@@ -16,40 +16,62 @@
         </div>
         <div class="header__contact">
             <div>http://nokachi-lyon.fr</div>
-            <div>contact@nokachi-lyon.fr</div>
+            <div>emmeline.mottet@nokachi-lyon.fr</div>
         </div>
     </div>
     <form>
         <div class="formIdentity">
             <div class="formGroup">
-                <h3>Fiche adhérent</h3>
+                <h3>Fiche de l'adhérent</h3>
                 <div class="formItem formItem--photo">
                     <div class="photo"></div>
                 </div>
-                <div class="formItem">
-                    <label>Prénom</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem">
-                    <label>Nom</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--birth">
-                    <label>Date de naissance</label>
-                    <input type="text" class="day" />
+                <div class="formBlock">
+                    <div class="formItem">
+                        <label>Prénom</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem">
+                        <label>Nom</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--half">
+                        <label>Sexe</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--half">
+                        <label>Age</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--birth">
+                        <label>Date de naissance</label>
+                        <input type="text" class="day" />
                         <span class="interInput">/</span>
-                    <input type="text" class="month" />
+                        <input type="text" class="month" />
                         <span class="interInput">/</span>
-                    <input type="text" class="year" />
-                </div>
-                <div class="formItem">
-                    <label>Age dans l'année</label>
-                    <input type="text" />
+                        <input type="text" class="year" />
+                    </div>
+                    <div class="formItem">
+                        <label>Ceinture</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem">
+                        <label>Catégorie d'âge</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem">
+                        <label>N° de licence</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem">
+                        <label>N° de passport</label>
+                        <input type="text" />
+                    </div>
                 </div>
             </div>
 
             <div class="formGroup">
-                <h3>Fiche de contact</h3>
+                <h3>Fiche du responsable</h3>
                 <div class="formItem">
                     <label>Prénom <i>(si différent de l'adhérent)</i></label>
                     <input type="text" />
@@ -62,41 +84,49 @@
                     <label>Adresse</label>
                     <input type="text" />
                 </div>
-                <div class="formItem">
-                    <label>Ville</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem">
+                <div class="formItem formItem--small">
                     <label>Code postal</label>
                     <input type="text" />
                 </div>
-                <div class="formItem">
+                <div class="formItem formItem--large">
+                    <label>Ville</label>
+                    <input type="text" />
+                </div>
+                <div class="formItem formItem--small">
                     <label>Téléphone</label>
                     <input type="text" />
                 </div>
-                <div class="formItem">
+                <div class="formItem formItem--large">
                     <label>Adresse email</label>
                     <input type="text" />
+                </div>
+                <div class="formItem formItem--double">
+                    <div>
+                        <input type="checkbox" />
+                        <span>Je souhaite recevoir des informations de la fédération par email.</span>
+                    </div>
+                    <div style="margin-top: 1em">
+                        <input type="checkbox" />
+                        <span>J'autorise le No Kachi Lyon à diffuser mes photos ou les photos de l'enfant dont je suis responsable</span>
+                    </div>
                 </div>
             </div>
 
             <div class="formGroup">
-                <h3>Autorisation parentale</h3>
+                <h3>Signature</h3>
                 <p>
-                    Je sousigné <input type="text" class="inText" />, père, mère ou tuteur de <input type="text" class="inText" />,
-                    l'autorise à pratiquer le karaté au sein du No Kachi Lyon,
-                    ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2013/2014.
+                    J'atteste avoir pris connaissance du règlement intérieur (cf verso du document).<br>
+                    Mention "Lu et approuvé" <input type="text" class="inText" />
                 </p>
-                <p>
-                    J'autorise le responsable à prendre, le cas échéant, toutes mesures
-                    (traitement médicaux, hospitalisations, interventions chirurgicales) rendues nécessaires par l'état de l'enfant.
-                </p>
-                <p>
-                    Je dégage le No Kachi Lyon de toute responsabilité en cas d'accident qui surviendrait à mon enfant hors du cadre des cours.
+                <p style="text-align: right; margin-top: 1.5em">
+                    Date <input type="text" class="inText inText--half" />
+                    Signature <input type="text" class="inText inText--half" />
                 </p>
             </div>
+
         </div>
         <div class="formInscription">
+
             <div class="formGroup">
                 <h3>Activités</h3>
                 <div class="tableWrapper">
@@ -143,52 +173,56 @@
 
             <div class="formGroup">
                 <h3>Pièces jointes</h3>
-                <div class="formLine">
-                    <div class="tableWrapper">
-                        <table class="attachment">
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Certificat médical daté de moins d’un an</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Photo d'identité</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Chèque de paiement</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                        </table>
-                    </div>
+                <p>Aucun dossier incomplet ne pourra être accepté.</p>
+                <div class="tableWrapper">
+                    <table class="attachment">
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Certificat médical daté de moins d’un an</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Photo d'identité</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Chèque de paiement</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="toComplete"></td>
+                            <td class="toComplete"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="toComplete"></td>
+                            <td class="toComplete"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="toComplete"></td>
+                            <td class="toComplete"></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
             <div class="formGroup">
-                <h3>Signature</h3>
+                <h3>Autorisation parentale</h3>
                 <p>
-                    J'atteste avoir pris connaissance des conditions générales d'inscription.<br>
-                    Mention "Lu et approuvé" <input type="text" class="inText" />
+                    Je sousigné <input type="text" class="inText" />, père, mère ou tuteur de <input type="text" class="inText" />,
+                    l'autorise à pratiquer le karaté au sein du No Kachi Lyon,
+                    ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2013/2014.
                 </p>
-                <p style="text-align: right; margin-top: 1.5em">
-                    Date <input type="text" class="inText inText--half" />
-                    Signature <input type="text" class="inText inText--half" />
+                <p>
+                    J'autorise le responsable à prendre, le cas échéant, toutes mesures
+                    (traitement médicaux, hospitalisations, interventions chirurgicales) rendues nécessaires par l'état de l'enfant.
+                </p>
+                <p>
+                    Je dégage le No Kachi Lyon de toute responsabilité en cas d'accident qui surviendrait à mon enfant hors du cadre des cours.
                 </p>
             </div>
+
         </div>
     </form>
 </body>
