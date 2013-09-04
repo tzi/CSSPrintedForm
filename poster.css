@@ -7,10 +7,12 @@ html {
     line-height: 1.2;
 }
 body {
+    margin: 0;
+}
+.page {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px;
-    margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -226,6 +228,10 @@ p {
         float: right;
         top: -20px;
     }
+    .fortItem--zipcode,
+    .fortItem--phone {
+        clear: left;
+    }
     .photo {
         margin-bottom: -70px;
     }
@@ -284,4 +290,29 @@ input.year {
     .activity tr td {
         padding-top: 0
     }
+}
+
+
+/* TEXT
+ **************************************/
+.text {
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+}
+.text h1 {
+    margin-top: 24px;
+    font-size: 14px;
+}
+.text h2 {
+    font-size: 12px;
+}
+.text p {
+    font-size: 10px;
+    margin: 1.2em 0 0;
+}
+.text ul {
+    font-size: 10px;
+    margin: 1.2em 0 0;
+    padding: 0 0 0 1em;
+    list-style: inside;
 }

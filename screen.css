@@ -1,39 +1,39 @@
 body {
     height: 100%;
 }
-.format-A5.format-portrait body {
+.format-A5.format-portrait .page {
     width: 148mm;
     height: 210mm;
 }
     
-.format-A5.format-landscape body {
+.format-A5.format-landscape .page {
     width: 210mm;
     height: 148mm;
 }
 
-.format-A4.format-portrait body {
+.format-A4.format-portrait .page {
     width: 210mm;
     height: 297mm;
 }
-.format-A4.format-landscape body {
+.format-A4.format-landscape .page {
     width: 297mm;
     height: 210mm;
 }
 
-.format-A3.format-portrait body {
+.format-A3.format-portrait .page {
     width: 297mm;
     height: 420mm;
 }
-.format-A3.format-landscape body {
+.format-A3.format-landscape .page {
     width: 420mm;
     height: 297mm;
 }
 
-.format-A2.format-portrait body {
+.format-A2.format-portrait .page {
     width: 420mm;
     height: 594mm;
 }
-.format-A2.format-landscape body {
+.format-A2.format-landscape .page {
     width: 594mm;
     height: 420mm;
 }

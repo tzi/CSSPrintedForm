@@ -8,222 +8,308 @@
     <link href='http://fonts.googleapis.com/css?family=Ruslan+Display' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="header">
-        <div class="header__title">
-            <h1>No Kachi Lyon</h1>
-            <h2>Fiche&nbsp;d'inscription</h2>
-            <h2>Saison&nbsp;2013/2014</h2>
+    <div class="page">
+        <div class="header">
+            <div class="header__title">
+                <h1>No Kachi Lyon</h1>
+                <h2>Fiche&nbsp;d'inscription</h2>
+                <h2>Saison&nbsp;2013/2014</h2>
+            </div>
+            <div class="header__contact">
+                <div>http://nokachi-lyon.fr</div>
+                <div>emmeline.mottet@nokachi-lyon.fr</div>
+            </div>
         </div>
-        <div class="header__contact">
-            <div>http://nokachi-lyon.fr</div>
-            <div>emmeline.mottet@nokachi-lyon.fr</div>
+        <form>
+            <div class="formIdentity">
+                <div class="formGroup">
+                    <h3>Fiche de l'adhérent</h3>
+                    <div class="formItem formItem--photo">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="formBlock">
+                        <div class="formItem">
+                            <label>Prénom</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem">
+                            <label>Nom</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--half">
+                            <label>Sexe (M/F)</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--half">
+                            <label>Age</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--birth">
+                            <label>Date de naissance</label>
+                            <input type="text" class="day" />
+                            <span class="interInput">/</span>
+                            <input type="text" class="month" />
+                            <span class="interInput">/</span>
+                            <input type="text" class="year" />
+                        </div>
+                        <div class="formItem">
+                            <label>Ceinture</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem">
+                            <label>Catégorie d'âge</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem">
+                            <label>N° de licence</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <h3>Fiche du responsable</h3>
+                    <div class="formItem">
+                        <label>Prénom <i>(si différent de l'adhérent)</i></label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem">
+                        <label>Nom <i>(si différent de l'adhérent)</i></label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--double">
+                        <label>Adresse</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--small fortItem--zipcode">
+                        <label>Code postal</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--large">
+                        <label>Ville</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--small fortItem--phone">
+                        <label>Téléphone</label>
+                        <input type="text" />
+                    </div>
+                    <div class="formItem formItem--large">
+                        <label>Adresse email</label>
+                        <input type="text" />
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <h3>Activités</h3>
+                    <div class="tableWrapper">
+                        <table class="activity">
+                            <tr>
+                                <th></th>
+                                <th>Activité</th>
+                                <th>Cotisation</th>
+                                <th>Adhésion</th>
+                                <th>Licence</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté de 6 à 9ans</td>
+                                <td>132€</td>
+                                <td>34€</td>
+                                <td>34€</td>
+                                <td>200€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté de 10 à 14ans</td>
+                                <td>152€</td>
+                                <td>34€</td>
+                                <td>34€</td>
+                                <td>220€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté Fitness</td>
+                                <td>182€</td>
+                                <td>34€</td>
+                                <td>34€</td>
+                                <td>250€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="formInscription">
+
+                <div class="formGroup">
+                    <h3>Pièces jointes</h3>
+                    <p>Aucun dossier incomplet ne pourra être accepté.</p>
+                    <div class="tableWrapper">
+                        <table class="attachment">
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Certificat médical daté de moins d’un an</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Photo d'identité</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Chèque de paiement</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="toComplete"></td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="toComplete"></td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="toComplete"></td>
+                                <td class="toComplete"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <h3>Autorisation parentale</h3>
+                    <p>
+                        Je sousigné <input type="text" class="inText" />, père, mère ou tuteur de <input type="text" class="inText" />,
+                        l'autorise à pratiquer le karaté au sein du No Kachi Lyon,
+                        ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2013/2014.
+                    </p>
+                    <p>
+                        J'autorise le responsable à prendre, le cas échéant, toutes mesures
+                        (traitement médicaux, hospitalisations, interventions chirurgicales) rendues nécessaires par l'état de l'enfant.
+                    </p>
+                    <p>
+                        Je dégage le No Kachi Lyon de toute responsabilité en cas d'accident qui surviendrait à mon enfant hors du cadre des cours.
+                    </p>
+                </div>
+
+                <div class="formGroup">
+                    <h3>Validation de l'inscription</h3>
+                    <p style="margin-top: 0.5em">
+                        <input type="checkbox" style="vertical-align: middle"/>
+                        <span>Je souhaite recevoir des informations de la fédération par email.</span>
+                    </p>
+                    <p style="margin-top: 0.5em">
+                        <input type="checkbox" style="vertical-align: middle" />
+                        <span>J'autorise le No Kachi Lyon à diffuser mes photos ou les photos de l'enfant dont je suis responsable.</span>
+                    </p>
+                    <p style="margin-top: 0.5em">
+                        <input type="checkbox" style="vertical-align: middle" />
+                        <span>Je m'engage à respecter le règlement intérieur du No Kachi Lyon (cf verso du document).</span>
+                    </p>
+                    <p style="text-align: right; margin-top: 1.5em">
+                        Date <input type="text" class="inText inText--half" />
+                        Signature <input type="text" class="inText inText--half" />
+                    </p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="page">
+        <div class="text">
+            <h1>I. ADHESION A L’ASSOCIATION</h1>
+            <h2>Article 1 : Adhésion des nouveaux membres</h2>
+            <p>Toutes personnes est libre d’adhérer, à tout moment, à l’association, moyennant :</p>
+            <ul>
+                <li>La remise d’un certificat médical de non contre-indication à la pratique du karaté et disciplines
+            associées ;</li>
+                <li>Le paiement de sa cotisation ;</li>
+                <li>Le paiement de sa licence.</li>
+            </ul>
+            <h1>II. ASPECTS CONTRACTUEL ET FINANCIER</h1>
+            <h2>Article 2 : Coût des cotisations</h2>
+            <p>Dès lors que l’association aura suffisamment de ressources pour assurer son bon fonctionnement, le
+            coût des cotisations sera retravaillé afin de permettre l’accessibilité aux personnes les plus
+            démunies : chômeurs, étudiants, familles nombreuses, ...</p>
+            <h2>Article 3 : Modalité de paiement des cotisations</h2>
+            <p>Les modalités de paiement des cotisations et licences sont les suivantes :</p>
+            <ul>
+                <li>Le règlement ne pourra pas dépasser 3 mensualités consécutives ;</li>
+                <li>Aucune inscription ne sera acceptée si le dossier est incomplet. Un dossier complet comprend
+            une fiche d’inscription renseignée, une demande de licence renseignée, le certificat médical,
+            une photo, et le ou les chèques de règlements.</li>
+            </ul>
+            <h2>Article 4 : Modalité de remboursement des cotisations</h2>
+            <p>Après examen d’une demande de remboursement, si celle-ci est acceptée, alors le remboursement
+            sera réalisé au prorata du temps restant sur la saison en cours en se basant sur le coût de la
+            cotisation club. L’adhésion club et la licence fédérale ne peut en aucun cas faire l’objet d’un
+            remboursement.</p>
+            <h2>Article 5 : Cours annulés ou reportés</h2>
+            <p>Il peut arriver qu’en raison de stages ou de compétitions, certains cours pourraient ne pas avoir lieu.
+            Ces annulations ou reports ne pourront pas donner lieu à des remboursements partiels ou totaux de
+            la cotisation.</p>
+            <h2>Article 6 : Aucun cours pendant les vacances scolaires</h2>
+            <p>En raison de la fermeture du dojo par la municipalité pendant les vacances scolaires, aucun cours ne
+            sera dispensé sur ces périodes.</p>
+            <h2>Article 7 : Règlement des prestations des enseignants</h2>
+            <p>Les prestations des enseignants permanents sont réglées par l’association. Dès lors que l’association
+            aura suffisamment de ressources pour assurer son bon fonctionnement, les prestations des
+            enseignants permanents pourront être renégociées afin qu’elles soient en adéquation avec
+            l’investissement et la qualification de ceux-ci.</p>
+            <p>Les enseignants intervenants en remplacement, c’est-à-dire de manière ponctuelle, sont bénévoles.
+            Cependant, ils font partie des membres bienfaiteurs de l’association. De ce fait, ils sont dispensés du
+            versement de leur cotisation. Les enseignants remplaçants doivent être titulaires d’un diplôme
+            permettant l’enseignement du karaté.</p>
+            <h2>Article 8 : Indemnités financières</h2>
+            <p>Dès lors que l’association aura suffisamment de ressources pour assurer son bon fonctionnement,
+            des indemnités financières seront versées sur justificatifs dans les cas suivants :</p>
+            <ul>
+                <li>Défraiement des membres du bureau directeur, de leurs frais de fonctionnement, de
+            déplacement ou de représentation, engendrés dans le cadre de leur mission au sein de
+            l’association ;</li>
+                <li>Défraiement des compétiteurs, de leurs frais de déplacement en compétition.</li>
+            </ul>
+            <h1>III. SECURITE & HYGIENE</h1>
+            <h2>Article 9 : Obligation de sécurité</h2>
+            <p>L’association assure à ses membres :</p>
+            <ul>
+                <li>la conformité avec les règles de sécurité adaptées à la pratique du karaté ;</li>
+                <li>la conformité avec les règles d'hygiène adaptées à la pratique du karaté ;</li>
+                <li>la mise à disposition à chaque cours d'une trousse de premiers secours ;</li>
+                <li>le mise à disposition d'un téléphone à proximité du lieu d’entraiment avec les numéros
+            d'urgence.</li>
+            </ul>
+            <h2>Article 10 : Arrivées et départs</h2>
+            <p>Les parents sont responsables des enfants jusqu’au début des cours et aussitôt à la fin des cours.
+            Ceux-ci doivent être présent 15 minutes maximum avant le cours et doivent attendre qu’un
+            responsable de l’association soit présent pour accéder aux vestiaires qui leur auront été désignés.</p>
+            <h2>Article 11 : Tenue et hygiène</h2>
+            <p>Une tenue correcte est exigée, Kimono blanc (pantalon et veste obligatoire) avec ceinture
+            correctement attachée. T-shirt blanc pour les personnes de sexe féminin. Les pratiquants devront
+            veiller à avoir les mains et pieds propres, ongles coupés.</p>
+            <h1>IV. DIFFUSION DE L’INFORMATION</h1>
+            <h2>Article 12 : Obligation d’information</h2>
+            <p>L’association assure à ses membres la mise à disposition des documents suivants :</p>
+            <ul>
+                <li>une copie des diplômes des enseignants ;</li>
+                <li>une copie des cartes professionnelles des enseignants rémunérés ;</li>
+                <li>une copie de l’accusé de réception de déclaration d’établissement d’activités physiques ou
+            sportives ;</li>
+                <li>une attestation du contrat d’assurance en responsabilité civile ;</li>
+                <li>un tableau d’organisation des secours avec numéro d’urgence ;</li>
+                <li>les dates où les cours ne seront pas dispensés (vacances et absences des enseignants).</li>
+            </ul>
+            <h1>V. MODIFICATION DU REGLEMENT INTERIEUR</h1>
+            <h2>Article 13 : Modification du règlement intérieur</h2>
+            <p>Le présent règlement intérieur peut être modifié par le bureau directeur ou par l’assemblée générale
+            ordinaire à la majorité des membres.</p>
         </div>
     </div>
-    <form>
-        <div class="formIdentity">
-            <div class="formGroup">
-                <h3>Fiche de l'adhérent</h3>
-                <div class="formItem formItem--photo">
-                    <div class="photo"></div>
-                </div>
-                <div class="formBlock">
-                    <div class="formItem">
-                        <label>Prénom</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem">
-                        <label>Nom</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem formItem--half">
-                        <label>Sexe</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem formItem--half">
-                        <label>Age</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem formItem--birth">
-                        <label>Date de naissance</label>
-                        <input type="text" class="day" />
-                        <span class="interInput">/</span>
-                        <input type="text" class="month" />
-                        <span class="interInput">/</span>
-                        <input type="text" class="year" />
-                    </div>
-                    <div class="formItem">
-                        <label>Ceinture</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem">
-                        <label>Catégorie d'âge</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem">
-                        <label>N° de licence</label>
-                        <input type="text" />
-                    </div>
-                    <div class="formItem">
-                        <label>N° de passport</label>
-                        <input type="text" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="formGroup">
-                <h3>Fiche du responsable</h3>
-                <div class="formItem">
-                    <label>Prénom <i>(si différent de l'adhérent)</i></label>
-                    <input type="text" />
-                </div>
-                <div class="formItem">
-                    <label>Nom <i>(si différent de l'adhérent)</i></label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--double">
-                    <label>Adresse</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--small">
-                    <label>Code postal</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--large">
-                    <label>Ville</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--small">
-                    <label>Téléphone</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--large">
-                    <label>Adresse email</label>
-                    <input type="text" />
-                </div>
-                <div class="formItem formItem--double">
-                    <div>
-                        <input type="checkbox" />
-                        <span>Je souhaite recevoir des informations de la fédération par email.</span>
-                    </div>
-                    <div style="margin-top: 1em">
-                        <input type="checkbox" />
-                        <span>J'autorise le No Kachi Lyon à diffuser mes photos ou les photos de l'enfant dont je suis responsable</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="formGroup">
-                <h3>Signature</h3>
-                <p>
-                    J'atteste avoir pris connaissance du règlement intérieur (cf verso du document).<br>
-                    Mention "Lu et approuvé" <input type="text" class="inText" />
-                </p>
-                <p style="text-align: right; margin-top: 1.5em">
-                    Date <input type="text" class="inText inText--half" />
-                    Signature <input type="text" class="inText inText--half" />
-                </p>
-            </div>
-
-        </div>
-        <div class="formInscription">
-
-            <div class="formGroup">
-                <h3>Activités</h3>
-                <div class="tableWrapper">
-                    <table class="activity">
-                        <tr>
-                            <th></th>
-                            <th>Activité</th>
-                            <th>Cotisation</th>
-                            <th>Adhésion</th>
-                            <th>Licence</th>
-                            <th>Total</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Karaté de 6 à 9ans</td>
-                            <td>132€</td>
-                            <td>34€</td>
-                            <td>34€</td>
-                            <td>200€</td>
-                            <td class="toComplete"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Karaté de 10 à 14ans</td>
-                            <td>152€</td>
-                            <td>34€</td>
-                            <td>34€</td>
-                            <td>220€</td>
-                            <td class="toComplete"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Karaté Fitness</td>
-                            <td>182€</td>
-                            <td>34€</td>
-                            <td>34€</td>
-                            <td>250€</td>
-                            <td class="toComplete"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="formGroup">
-                <h3>Pièces jointes</h3>
-                <p>Aucun dossier incomplet ne pourra être accepté.</p>
-                <div class="tableWrapper">
-                    <table class="attachment">
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Certificat médical daté de moins d’un an</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Photo d'identité</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Chèque de paiement</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="toComplete"></td>
-                            <td class="toComplete"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="toComplete"></td>
-                            <td class="toComplete"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="toComplete"></td>
-                            <td class="toComplete"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="formGroup">
-                <h3>Autorisation parentale</h3>
-                <p>
-                    Je sousigné <input type="text" class="inText" />, père, mère ou tuteur de <input type="text" class="inText" />,
-                    l'autorise à pratiquer le karaté au sein du No Kachi Lyon,
-                    ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2013/2014.
-                </p>
-                <p>
-                    J'autorise le responsable à prendre, le cas échéant, toutes mesures
-                    (traitement médicaux, hospitalisations, interventions chirurgicales) rendues nécessaires par l'état de l'enfant.
-                </p>
-                <p>
-                    Je dégage le No Kachi Lyon de toute responsabilité en cas d'accident qui surviendrait à mon enfant hors du cadre des cours.
-                </p>
-            </div>
-
-        </div>
-    </form>
 </body>
 </html>
