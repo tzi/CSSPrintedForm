@@ -65,16 +65,111 @@
                             <input type="text" />
                         </div>
                     </div>
+                    <div>
+                        <div class="formItem formItem--double">
+                            <label>Adresse</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--small fortItem--zipcode">
+                            <label>Code postal</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--large">
+                            <label>Ville</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--small fortItem--phone">
+                            <label>Téléphone</label>
+                            <input type="text" />
+                        </div>
+                        <div class="formItem formItem--large">
+                            <label>Adresse email</label>
+                            <input type="text" />
+                        </div>
+                    </div>
                 </div>
 
                 <div class="formGroup">
-                    <h3>Informations de contact</h3>
+                    <h3>Activités</h3>
+                    <div class="tableWrapper">
+                        <table class="activity">
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Cotisation</th>
+                                <th>Adhésion</th>
+                                <th>Licence</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté de 6 à 9ans</td>
+                                <td>132€</td>
+                                <td>33€</td>
+                                <td>35€</td>
+                                <td>200€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté de 10 à 14ans</td>
+                                <td>152€</td>
+                                <td>33€</td>
+                                <td>35€</td>
+                                <td>220€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Karaté Fitness</td>
+                                <td>182€</td>
+                                <td>33€</td>
+                                <td>35€</td>
+                                <td>250€</td>
+                                <td class="toComplete"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <h3>Pièces jointes</h3>
+                    <p>Aucun dossier incomplet ne pourra être accepté.</p>
+                    <div class="tableWrapper">
+                        <table class="attachment">
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Certificat médical daté de moins d’un an</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Photo d'identité</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Chèque de paiement</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="toComplete"></td>
+                                <td class="toComplete"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="formInscription">
+
+                <div class="formGroup">
+                    <h3>Informations du responsable</h3>
                     <div class="formItem">
-                        <label>Prénom <i>(si différent de l'adhérent)</i></label>
+                        <label>Prénom</label>
                         <input type="text" />
                     </div>
                     <div class="formItem">
-                        <label>Nom <i>(si différent de l'adhérent)</i></label>
+                        <label>Nom</label>
                         <input type="text" />
                     </div>
                     <div class="formItem formItem--double">
@@ -100,94 +195,11 @@
                 </div>
 
                 <div class="formGroup">
-                    <h3>Activités</h3>
-                    <div class="tableWrapper">
-                        <table class="activity">
-                            <tr>
-                                <th></th>
-                                <th>Activité</th>
-                                <th>Cotisation</th>
-                                <th>Adhésion</th>
-                                <th>Licence</th>
-                                <th>Total</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Karaté de 6 à 9ans</td>
-                                <td>132€</td>
-                                <td>34€</td>
-                                <td>34€</td>
-                                <td>200€</td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Karaté de 10 à 14ans</td>
-                                <td>152€</td>
-                                <td>34€</td>
-                                <td>34€</td>
-                                <td>220€</td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Karaté Fitness</td>
-                                <td>182€</td>
-                                <td>34€</td>
-                                <td>34€</td>
-                                <td>250€</td>
-                                <td class="toComplete"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-            <div class="formInscription">
-
-                <div class="formGroup">
-                    <h3>Pièces jointes</h3>
-                    <p>Aucun dossier incomplet ne pourra être accepté.</p>
-                    <div class="tableWrapper">
-                        <table class="attachment">
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Certificat médical daté de moins d’un an</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Photo d'identité</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" /></td>
-                                <td>Chèque de paiement</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td class="toComplete"></td>
-                                <td class="toComplete"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="formGroup">
                     <h3>Autorisation parentale</h3>
                     <p>
                         Je sousigné <input type="text" class="inText" />, père, mère ou tuteur de <input type="text" class="inText" />,
                         l'autorise à pratiquer le karaté au sein du No Kachi Lyon,
-                        ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2013/2014.
+                        ainsi qu'à participer aux différentes rencontres sportives ou compétitions de karaté pour la saison 2014/2015.
                     </p>
                     <p>
                         J'autorise le responsable à prendre, le cas échéant, toutes mesures

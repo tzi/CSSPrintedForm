@@ -211,6 +211,7 @@ p {
  **************************************/
 .formItem--photo {
     width: auto;
+    padding-bottom: 0;
 }
 .photo {
     background: white;
@@ -262,9 +263,11 @@ input.year {
     border-collapse: collapse;
     width: 100%;
 }
+th {
+    text-align: left;
+}
 .attachment tr td,
 .activity tr td {
-    padding-top: 6px;
     height: 20px;
 }
 .attachment tr td:nth-child(1),
